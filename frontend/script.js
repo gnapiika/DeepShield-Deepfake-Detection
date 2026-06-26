@@ -88,7 +88,7 @@ detectBtn.addEventListener("click", async (event) => {
 
     try {
         // Switch out url with production endpoints post-deployment 
-        const response = await fetch("http://127.0.0.1:5000/predict", {
+        const response = await fetch("https://deepshield-deepfake-detection.onrender.com", {
             method: "POST",
             body: formData
         });
