@@ -1,7 +1,4 @@
 {
-  "framework": "null",
-  "public": true,
   "cleanUrls": true,
-  "buildCommand": null,
   "outputDirectory": "frontend"
 }
