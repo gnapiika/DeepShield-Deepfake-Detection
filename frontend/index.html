@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepShield - AI Deepfake Detection Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="glass-container">
+        <header>
+            <h1>🛡️ DeepShield</h1>
+            <p class="subtitle">Advanced AI Deepfake Verification Engine</p>
+        </header>
+
+        <main>
+            <div id="dropZone" class="upload-zone">
+                <input type="file" id="imageInput" accept="image/*" hidden>
+                <div class="zone-content" id="zoneContent">
+                    <span class="upload-icon">📸</span>
+                    <p>Drag & drop image here or <strong>browse files</strong></p>
+                    <span class="file-spec">Supports JPG, PNG, WEBP</span>
+                </div>
+                <img id="preview" alt="Scan Preview" style="display: none;">
+            </div>
+
+            <div class="action-panel">
+                <button type="button" id="detectBtn">Analyze Specimen</button>
+            </div>
+
+            <div id="metricsDashboard" class="dashboard" style="display: none;">
+                <div class="result-text-block">
+                    <span class="meta-label">Analysis Result</span>
+                    <h2 id="predictionOutcome">UNKNOWN</h2>
+                </div>
+                
+                <div class="gauge-wrapper">
+                    <svg class="progress-ring" width="120" height="120">
+                        <circle class="progress-ring__background" stroke="#2e384d" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                        <circle id="gaugeCircle" class="progress-ring__circle" stroke="#2563eb" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                    </svg>
+                    <div id="gaugeValue" class="gauge-text">0%</div>
+                </div>
+            </div>
+            
+            <div id="analysisSpinner" class="spinner-container" style="display: none;">
+                <div class="loading-spinner"></div>
+                <p>Decoding digital artifacts...</p>
+            </div>
+        </main>
+
+        <section class="history-section">
+            <h3>📜 Session Audit Trail</h3>
+            <ul id="historyList" class="history-list">
+                <li class="empty-history-msg">No historical captures in this session.</li>
+            </ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

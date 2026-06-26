@@ -25,13 +25,15 @@ def predict_image(image_path):
     # Get prediction
     prediction = model.predict(image, verbose=0)
 
-    # Confidence score (between 0 and 1)
-    confidence = float(prediction[0][0])
+    # Probability that the image is FAKE
+    fake_probability = float(prediction[0][0])
 
-    # Decide the class
-    if confidence >= 0.5:
+    # Determine prediction and confidence
+    if fake_probability >= 0.5:
         result = "FAKE"
+        confidence = fake_probability
     else:
         result = "REAL"
+        confidence = 1 - fake_probability
 
     return result, confidence
