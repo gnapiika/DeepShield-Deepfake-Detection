@@ -158,7 +158,7 @@ DeepShield/
 Clone the repository.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/DeepShield-Deepfake-Detection.git
+git clone https://github.com/gnapiika/DeepShield-Deepfake-Detection.git
 ```
 
 Go into the project directory.
@@ -276,19 +276,22 @@ Display Result
 
 ## Home Page
 
-_Add screenshot here_
+<img width="842" height="755" alt="image" src="https://github.com/user-attachments/assets/392f2117-eb58-4baf-b5cd-a8c2dc0f9f57" />
+
 
 ---
 
 ## Image Uploaded
 
-_Add screenshot here_
+<img width="927" height="777" alt="image" src="https://github.com/user-attachments/assets/7e3ebd53-efe0-4773-877e-0af2eafc4b10" />
+
 
 ---
 
 ## Prediction Result
 
-_Add screenshot here_
+<img width="748" height="903" alt="image" src="https://github.com/user-attachments/assets/59876d32-d3c2-4f8f-9aa4-5297eb5df8fb" />
+
 
 ---
 
