@@ -344,14 +344,14 @@ Specializations:
 GitHub:
 https://github.com/gnapiika
 
-## If you like this project
-
-If you found this project interesting, consider giving it a ⭐ on GitHub.
-
 ---
 
 LinkedIn:
 https://linkedin.com/in/gnapiika
 
 ---
+## If you like this project
 
+If you found this project interesting, consider giving it a ⭐ on GitHub.
+
+---
